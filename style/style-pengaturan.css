@@ -1,0 +1,233 @@
+/* Basic */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+/* Basic End */
+
+/* Header---------------------------- */
+header {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #333;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 7px;
+}
+
+header span {
+    color: orangered;
+    transition: 0.4s;
+}
+
+header .logout {
+    display: flex;
+}
+
+header button {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    background-color: orangered;
+    border-radius: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: aliceblue;
+    color: #333;
+    box-shadow: 0 0 4px #fff, 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(2, 2, 2, 0.3);
+}
+
+/* Header End---------------------------- */
+
+/* Main--------------------------------- */
+main {
+    width: 100%;
+    display: flex;
+}
+
+/* Sidebar-- */
+main .sidebar {
+    border-right: 1px solid rgb(202, 202, 202);
+    width: 20%;
+    height: 90vh;
+}
+
+main .sidebar button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: orangered;
+    border-radius: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+main .sidebar button:hover {
+    background-color: aliceblue;
+    color: #333;
+    box-shadow: 0 0 4px #fff, 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(2, 2, 2, 0.3);
+}
+
+main .sidebar .user {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+main .sidebar .user p {
+    padding: 20px 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: grey;
+    text-align: left;
+}
+
+main .sidebar .user p:hover {
+    text-decoration: underline;
+}
+
+main nav {
+    border-top: 1px solid rgb(202, 202, 202);
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding: 20px 0;
+}
+
+main nav .item-nav {
+    width: 100%;
+    padding: 15px 20%;
+    font-size: 1.15rem;
+    color: #51557E;
+}
+
+main nav .item-nav.active {
+    color: orangered;
+}
+
+main nav .item-nav:hover {
+    background-color: rgba(202, 202, 202, 0.7);
+}
+
+main .sidebar .other {
+    width: 100%;
+    padding-top: 20px;
+}
+
+main .sidebar .other p {
+    color: #51557E;
+    margin-bottom: 20px;
+    padding: 10px 20%;
+    font-size: 1.15rem;
+}
+
+main .sidebar .other span {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+
+/* Content-- */
+main .content {
+    width: 100%;
+    height: 90vh;
+    padding: 20px 50px;
+    overflow-y: auto;
+}
+
+main .content .setting {
+    width: 70%;
+    padding: 20px;
+}
+
+main .setting input {
+    outline: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    display: block;
+    margin: 5px 0 30px 0;
+}
+
+main .setting textarea {
+    outline: none;
+    width: 50%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    display: block;
+    margin: 5px 0 30px 0;
+}
+
+main .setting select {
+    outline: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    display: block;
+    margin: 5px 0 30px 0;
+}
+
+main .setting button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: orangered;
+    border-radius: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+main .setting button:hover {
+    background-color: aliceblue;
+    color: #333;
+    box-shadow: 0 0 4px #fff, 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(2, 2, 2, 0.3);
+}
+
+/* Main End--------------------------------- */

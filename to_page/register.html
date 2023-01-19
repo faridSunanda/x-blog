@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/style-register.css">
+    <title>X-Blog Register</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-web">
+            <a href="../index.html"><span>X</span>-Blog</a>
+        </div>
+        <nav>
+            <a href="../index.html" class="link">Home</a>
+            <a href="../index.html#about" class="link">About Us</a>
+            <a href="../index.html#service" class="link">Our Service</a>
+            <a href="../index.html#contact" class="link">Contact</a>
+            <a href="../index.html#help" class="link">Help</a>
+            <a href="login.html"><button>Login</button></a>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Register -->
+    <div class="container">
+        <form action="login.html">
+            <main>
+                <div class="register-top">
+                    <h2>Register</h2><br>
+                    <p>Fill out this form</p>
+                </div>
+
+                <input type="text" class="name" placeholder="First Name" required>
+                <input type="text" class="name" placeholder="Last Name">
+                <input type="text" class="form" placeholder="Username" required>
+                <input type="email" class="form" placeholder="Email Address" required>
+                <input type="password" class="form" placeholder="Password" required>
+
+                <div class="register-bottom">
+                    <input type="checkbox" name="term" id="term">
+                    <p>I agree with the <a href="">Terms and Conditions</a> and the <a href="">Privacy Policy</a></p>
+                    <button type="submit">Create Account</button>
+                </div>
+
+            </main>
+        </form>
+    </div>
+    <!-- Main Register End -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-items">
+            <h1>Help</h1>
+            <ul>
+                <li><a href="">Help Center</a></li>
+                <li><a href="">Help Forum</a></li>
+                <li><a href="">Video Tutorial</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Content Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-items">
+            <h1>Community</h1>
+            <ul>
+                <li><a href="">X-Blog Buzz</a></li>
+            </ul>
+        </div>
+        <div class="footer-items">
+            <h1>Developers</h1>
+            <ul>
+                <li><a href="">X-Blog API</a></li>
+                <li><a href="">Developer Forum</a></li>
+            </ul>
+        </div>
+    </footer>
+    <section class="copyright">
+        <hr>
+        <p>Copyright &copy; 2022 By X-Blog. All right reserved.</p>
+    </section>
+    <!-- Footer End -->
+
+
+    <!-- Reponsive Navigation -->
+    <section class="responsive-nav">
+        <a class="link" id="linkShort" href="">Home</a>
+        <a class="link" id="linkAbout" href="#about">About Us</a>
+        <a class="link" id="linkServices" href="#service">Our Services</a>
+        <a class="link" id="linkContact" href="">Contact</a>
+        <a class="link" id="linkHelp" href="">Help</a>
+        <a class="link" id="linklogin" href="login.html">Login</a>
+    </section>
+    <!-- Reponsive Navigation End -->
+
+    <!-- Javascript Code -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const responsiveNav = document.querySelector(".responsive-nav");
+        var linkAbout = document.querySelector("#linkAbout");
+        var linkServices = document.querySelector("#linkServices");
+        var linkContact = document.querySelector("#linkContact");
+        var linkHelp = document.querySelector("#linkHelp");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            responsiveNav.classList.toggle("active");
+        })
+        linkAbout.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            responsiveNav.classList.remove("active");
+        })
+        linkHelp.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            responsiveNav.classList.remove("active");
+        })
+        linkServices.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            responsiveNav.classList.remove("active");
+        })
+        linkContact.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            responsiveNav.classList.remove("active");
+        })
+    </script>
+
+
+</body>
+
+</html>

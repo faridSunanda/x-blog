@@ -1,0 +1,393 @@
+/* Basic */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+/* Basic End */
+
+
+
+/* Header----------------------------- */
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+/* Logo-Web */
+header .logo-web {
+    width: 40%;
+    padding: 10px;
+    height: 80px;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 7px;
+    /* z-index: 9; */
+}
+
+header .logo-web a {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+header .logo-web span {
+    color: orangered;
+    transition: 0.4s;
+}
+
+/* Navigasi */
+header nav {
+    width: 60%;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+    /* z-index: 9; */
+}
+
+header nav .link {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+header nav .link:hover {
+    text-shadow: 0 0 10px #fff;
+    border-bottom: 2px solid #fff;
+}
+
+header nav a button {
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: orangered;
+    border-radius: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header nav a button:hover {
+    background-color: aliceblue;
+    color: #333;
+    box-shadow: 0 0 4px #fff, 0 0 10px rgb(255, 255, 255, 0.5), 0 0 20px rgb(255, 255, 255, 0.3);
+}
+
+.responsive-nav {
+    display: none;
+}
+
+.responsive-nav.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    z-index: 99;
+}
+
+.responsive-nav a {
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    font-weight: 300;
+    transition: 0.5s;
+    padding: 20px 0;
+}
+
+.responsive-nav a:hover {
+    color: #FF1700;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+/* Header End------------------------------ */
+
+
+/* Main Register--------------------------- */
+main {
+    background-color: aliceblue;
+    color: #333;
+    margin-top: 30vh;
+    margin-bottom: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+main .register-top {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .register-bottom {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+main .register-bottom input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+main .register-bottom a {
+    color: #000;
+    font-weight: bold;
+}
+
+main .register-bottom button {
+    width: 100%;
+    padding: 15px;
+    /* background-color: rgba(59, 68, 246, 0.7); */
+    background-color: rgba(0, 132, 255, 0.8);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main .register-bottom button:hover {
+    background-color: rgba(0, 132, 255, 1);
+}
+
+main .form {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(192, 192, 192, 0.2);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+main .name {
+    width: 49%;
+    padding: 20px;
+    background-color: rgba(192, 192, 192, 0.2);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+
+
+/* Main Register End--------------------------- */
+
+
+
+
+
+
+
+
+/* Footer------------------------------------- */
+footer {
+    color: aliceblue;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-color: #1d2b34;
+    padding-top: 20px;
+}
+
+footer .footer-items {
+    width: 50%;
+    padding: 10px 10px 10px 100px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+footer ul li a:hover {
+    margin-left: 6px;
+    border-bottom: 1px solid aliceblue;
+    text-shadow: 0 0 5px aliceblue;
+}
+
+.copyright {
+    background-color: #1d2b34;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: aliceblue;
+}
+
+.copyright hr {
+    display: inline-block;
+    border: none;
+    height: 0.8px;
+    width: 100%;
+    background-color: bisque;
+    margin-bottom: 10px;
+}
+
+/* Footer End------------------------------------- */
+
+/* Responsive**************************************** */
+/* For Tablet */
+
+/* For Androin */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    header .logo-web {
+        font-size: 2rem;
+        width: 60%;
+        height: 55px;
+    }
+
+    header nav {
+        width: 40%;
+        height: 55px;
+    }
+
+    header nav a.link {
+        display: none;
+    }
+
+    header nav button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    main .form {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    main .name {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    main .register-bottom {
+        font-size: 0.5rem;
+    }
+
+    main .register-bottom input {
+        width: 10px;
+        height: 10px;
+    }
+
+    main .register-bottom button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    footer .footer-items {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
